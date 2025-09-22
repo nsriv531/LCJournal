@@ -10,7 +10,6 @@ var twoSum = function(nums, target) {
         let complement = target - nums[i];
 
         if (map.has(complement)) {
-            console.log("triggered"); // pair has been found
             return [map.get(complement), i];
         }
 
