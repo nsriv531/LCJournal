@@ -1,11 +1,11 @@
-class TrieNode {
+class TrieNode { //node definied.
   constructor() {
     this.children = new Map(); // char -> TrieNode
     this.isEnd = false;        // marks a completed word
   }
 }
 
-class WordDictionary {
+class WordDictionary { //actual 'Trie' structure, can sometimes be called a 'Word Dictionary'. Or a 'Prefix Tree'.
   constructor() {
     this.root = new TrieNode();
   }
